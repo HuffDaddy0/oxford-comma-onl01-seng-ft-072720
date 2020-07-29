@@ -1,7 +1,7 @@
 def oxford_comma(array)
   new_array = []
   array.each_with_index do |element, index|
-    if index == array.length - 1
+    if array.length > 1 && index == array.length - 1
       element = "and #{element}"
       new_array.push(element)
     else
